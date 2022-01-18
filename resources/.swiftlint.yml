@@ -1,0 +1,30 @@
+excluded:
+  - Tests
+  - .build
+  - .swiftpm
+  - Package.swift
+  
+opt_in_rules:
+  - file_header
+
+colon:
+  apply_to_dictionaries: false
+  
+file_header:
+  required_pattern: |
+                    \/\/
+                    \/\/  .*?\.swift
+                    \/\/  ShortcutFoundation
+                    \/\/
+                    \/\/  Created by .*? on \d{4}\-\d{1,2}\-\d{1,2}\.
+                    \/\/  Copyright © \d{4} Shortcut Scandinavia Apps AB\. All rights reserved\.
+                    \/\/
+
+indentation: 2
+
+line_length: 150
+
+identifier_name:
+  min_length: 2
+    
+reporter: "json"
